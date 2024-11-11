@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "form", to: "questions#form", as: :form
+  get "answer", to: "questions#answer", as: :answer
 end
